@@ -1,0 +1,24 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Keep output folders but ignore contents (uncomment if you don't want to track outputs)
+# output/specs/*
+# output/strategies/*
+# output/shipping-decisions/*
+# !output/specs/.gitkeep
+# !output/strategies/.gitkeep
+# !output/shipping-decisions/.gitkeep
+
+# Notes might contain sensitive info - uncomment to exclude
+# notes/
+
+# Word export outputs
+output/*.docx
