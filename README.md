@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/pmstudio.png" alt="PM Studio" width="600">
+</p>
+
 # PM Studio
 
 A Claude Code workspace for product managers to write high-quality specs, strategy docs, and shipping decisions through collaborative AI dialogue.
