@@ -4,7 +4,6 @@ This file helps PM Studio understand technical constraints and architecture. It 
 
 **This file is optional.** If you have existing technical documentation, you can ask Claude to fill this out by saying: *"Here's our technical spec [paste or upload]. Please fill out technical-context.md based on this."*
 
----
 
 ## Architecture Overview
 
@@ -23,7 +22,6 @@ This file helps PM Studio understand technical constraints and architecture. It 
 
 [Describe how data flows through your system for key scenarios]
 
----
 
 ## Platforms
 
@@ -39,7 +37,6 @@ This file helps PM Studio understand technical constraints and architecture. It 
 - **Deployment:** [How updates ship]
 - **Constraints:** [Platform-specific limitations]
 
----
 
 ## Key Services & Dependencies
 
@@ -55,7 +52,6 @@ This file helps PM Studio understand technical constraints and architecture. It 
 |---------|--------------|-------------|
 | [Service 1] | [Description] | [Limitations] |
 
----
 
 ## Common Technical Constraints
 
@@ -73,7 +69,6 @@ This file helps PM Studio understand technical constraints and architecture. It 
 
 [Relevant security constraints]
 
----
 
 ## Integration Points
 
@@ -89,7 +84,6 @@ This file helps PM Studio understand technical constraints and architecture. It 
 |--------|------------------|-------|
 | [System 1] | [Type] | [Details] |
 
----
 
 ## Feature Flags & Experimentation
 
@@ -98,7 +92,6 @@ This file helps PM Studio understand technical constraints and architecture. It 
 - **Stages:** [Your rollout stages]
 - **Experiment framework:** [How you run experiments]
 
----
 
 ## Technical Debt & Known Issues
 
@@ -106,7 +99,6 @@ This file helps PM Studio understand technical constraints and architecture. It 
 |-------|--------|--------|
 | [Issue 1] | [How it affects users/team] | [Current status] |
 
----
 
 ## Engineering Team Structure
 
@@ -114,7 +106,6 @@ This file helps PM Studio understand technical constraints and architecture. It 
 |------|------|-------------|
 | [Team 1] | [Ownership area] | [Contact] |
 
----
 
 ## Glossary (Technical)
 

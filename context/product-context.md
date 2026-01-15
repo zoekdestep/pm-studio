@@ -2,12 +2,11 @@
 
 This file helps PM Studio understand your product domain. It provides context for writing specs, strategies, and decisions.
 
----
 
 ## Product Overview
 
 **Product:** [Your product name]
-> *Example: Acme Collaboration Platform*
+> *Example: Exo Collaboration Platform*
 
 **Focus area:** [Your specific area within the product]
 > *Example: Real-time collaboration features*
@@ -22,7 +21,6 @@ This file helps PM Studio understand your product domain. It provides context fo
 > - *Comments & threads - async discussion on content*
 > - *Version history - track and restore changes*
 
----
 
 ## Strategy & Vision
 
@@ -55,7 +53,6 @@ This file helps PM Studio understand your product domain. It provides context fo
 > | Presence indicators | Showing who's online increases collaboration | 20% increase in multi-user sessions |
 > | Smart notifications | AI-prioritized alerts reduce noise | 50% fewer ignored notifications |
 
----
 
 ## User Segments
 
@@ -78,7 +75,6 @@ This file helps PM Studio understand your product domain. It provides context fo
 
 > *Example: User opens shared doc → sees collaborators present → makes edit → teammate comments → they resolve together in real-time → changes auto-saved*
 
----
 
 ## Key Metrics
 
@@ -106,7 +102,6 @@ This file helps PM Studio understand your product domain. It provides context fo
 > | Sync latency | < 500ms | Collaboration feels broken if edits lag |
 > | Conflict rate | < 0.1% | Lost work destroys trust |
 
----
 
 ## Competitive Landscape
 
@@ -138,7 +133,6 @@ This file helps PM Studio understand your product domain. It provides context fo
 > 1. *AI-assisted collaboration - auto-suggestions, smart summaries (we should explore)*
 > 2. *Async-first culture - comments becoming as important as real-time (expand our threading)*
 
----
 
 ## Constraints & Considerations
 
@@ -172,7 +166,6 @@ This file helps PM Studio understand your product domain. It provides context fo
 > | Web | Full feature set, primary platform |
 > | Mobile | Limited to viewing + comments (no real-time editing) |
 
----
 
 ## Rollout Process
 
@@ -189,7 +182,6 @@ This file helps PM Studio understand your product domain. It provides context fo
 > | Beta | 5% of users | Validate metrics, gather feedback |
 > | GA | 100% | Full launch |
 
----
 
 ## Related Initiatives
 
@@ -203,7 +195,6 @@ This file helps PM Studio understand your product domain. It provides context fo
 > | Performance overhaul | Platform team | Will improve our sync latency |
 > | Mobile v2 | Mobile team | Opportunity to add real-time editing |
 
----
 
 ## Glossary
 

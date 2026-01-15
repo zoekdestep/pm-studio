@@ -2,7 +2,6 @@
 
 A recommended workflow for getting the most out of PM Studio.
 
----
 
 ## Week 1: Setup & First Use
 
@@ -21,10 +20,11 @@ Lower priority files (`technical-context.md`, `tone-and-voice.md`) can wait unti
 
 ### Day 2: Add Your Examples (15-30 min)
 
-Put 2-3 of your best docs in `context/examples/`:
+Put 4-5 of your best docs in `context/examples/`:
 - A spec you're proud of
 - A strategy doc that landed well
 - A shipping decision that was well-received
+- A doc that captures your voice nicely
 
 You can then ask PM Studio to update the templates and tone documents with your structure, level of detail, and voice from these examples.
 
@@ -58,9 +58,8 @@ Your first doc won't be perfect - the system improves as you add more context ov
 /note Random thought: what if we approached this differently...
 ```
 
-**Upload meeting transcripts:** If your meetings are auto-transcribed (e.g., Teams, Zoom), paste the transcript and ask Claude to extract key points as notes.
+**Upload meeting transcripts:** If your meetings are auto-transcribed (e.g., Teams, Zoom), paste the transcript as a note.
 
----
 
 ## Week 2: Find Your Workflow
 
@@ -84,7 +83,6 @@ Everyone works differently. Experiment to find what works for you. If you find s
 2. Be honest about concerns - the doc should show both sides
 3. Run `metrics-designer` if you need guardrails
 
----
 
 ## What's Next?
 
@@ -97,7 +95,6 @@ After two weeks, you should have:
 
 From here, the system keeps getting better as you use it. Your knowledge base grows, you keep refining commands and agents, and Claude gets better at understanding your product and style.
 
----
 
 ## Tips for Success
 
@@ -105,7 +102,7 @@ From here, the system keeps getting better as you use it. Your knowledge base gr
 
 **Keep context files updated** - especially when strategy or priorities change.
 
-**Run multiple agents** - don't stop at one pass. Completeness checker, then edge case finder, then editor.
+**Run multiple agents** - don't stop at one pass. Completeness checker, then critical reader, then editor.
 
 **Ask Claude to help with setup** - "Research competitors in [space] and update product-context.md"
 
@@ -116,9 +113,8 @@ From here, the system keeps getting better as you use it. Your knowledge base gr
 For best results, I personally use:
 - **Claude Opus 4.5** with extended thinking enabled
 - **VS Code** with the Claude Code extension
-- **Superwhisper** (or similar voice-to-text) for brainstorming - typing random thoughts is hard, talking is easier
+- **Superwhisper** for brainstorming - typing random thoughts is hard, talking is easier
 
----
 
 ## Updates
 
@@ -126,7 +122,6 @@ For best results, I personally use:
 - Check for new commands and agents periodically
 - Share improvements back to the project - PRs are very welcome!
 
----
 
 ## Questions?
 

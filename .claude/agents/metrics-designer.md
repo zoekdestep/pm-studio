@@ -37,7 +37,7 @@ Consider suggesting:
 ### 3. Suggest Guardrail Metrics
 
 Guardrails are metrics that should NOT regress. They protect against unintended harm:
-- **Satisfaction guardrails**: Thumbs down rate, NPS, survey scores
+- **Satisfaction guardrails**: NPS, survey scores
 - **Performance guardrails**: Latency, error rates, success rates
 - **Business guardrails**: Retention, engagement, activation
 - **Adjacent feature guardrails**: Usage of related features

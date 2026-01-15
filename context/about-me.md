@@ -2,12 +2,11 @@
 
 This file helps PM Studio understand your role, preferences, and working style.
 
----
 
 ## Role & Scope
 
 **Name:** [Your name and alias]
-> *Example: Sarah Chen (schen)*
+> *Example: Stephanie Visser (alias)*
 
 **Role:** [Your title]
 > *Example: Senior Product Manager*
@@ -21,7 +20,6 @@ This file helps PM Studio understand your role, preferences, and working style.
 **Scope:** [What you own end-to-end]
 > *Example: End-to-end ownership of search ranking, filters, and search suggestions*
 
----
 
 ## How I Work
 
@@ -49,7 +47,6 @@ This file helps PM Studio understand your role, preferences, and working style.
 > - *Give me direct feedback - don't sugarcoat*
 > - *Async-first, meetings for alignment and decisions*
 
----
 
 ## Stakeholders
 
@@ -104,7 +101,6 @@ This file helps PM Studio understand your role, preferences, and working style.
 > | Personalized Search | In development | Beta launch Feb 15 |
 > | Search Filters v2 | Shipped, monitoring | Hit 90-day retention target |
 
----
 
 ## Preferences for This Tool
 
@@ -137,7 +133,6 @@ This file helps PM Studio understand your role, preferences, and working style.
 > - *Never ship if error rate > 1% or latency > 500ms*
 > - *Need eng lead sign-off for any backend changes*
 
----
 
 ## Notes
 

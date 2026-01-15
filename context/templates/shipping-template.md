@@ -1,16 +1,13 @@
-# [Feature Name] – [Shipping Decision Type, e.g., "Road to Prod", "Current State"]
+# [Feature Name] – [Shipping Decision Type, e.g., "100% Production", "Current State"]
 
 **Authors:** [Names] (aliases) | **Date:** [Date]
 
 [Optional: Supplemental data: [Link to supporting doc]]
 
----
-
 ## Introduction
 
 [1-2 paragraphs describing the current state, the decision being made, and a preview of the recommendation. Be clear about what you're proposing.]
 
----
 
 ## Learnings
 
@@ -31,7 +28,6 @@
 
 *Sources: [List numbered sources]*
 
----
 
 ### Customer sentiment
 
@@ -45,11 +41,10 @@
 
 **[Another concern].** [Description]. [Quote] ([Source]).
 
-**[Enterprise/specific segment concerns].** [Description with specifics]. [Quote] ([Source]).
+**[Specific segment concerns].** [Description with specifics]. [Quote] ([Source]).
 
 *Sources: [List numbered sources]*
 
----
 
 ### [Partner/Adjacent team] learnings
 
@@ -57,7 +52,6 @@
 
 *Sources: [List sources]*
 
----
 
 ## Road ahead
 
@@ -78,44 +72,22 @@ Summarizing above, we see [assessment of the situation]. We [do/don't] want to [
 
 **Important note:** [Any caveats or platform-specific considerations]
 
----
 
 ### Future steps
 
 [What comes after this decision? What needs to happen longer-term?]
 
----
 
 ### Success criteria
 
 We will determine success of this [rollout/decision] by:
 
 - [Metric 1 with specific threshold - e.g., "No big customer escalations. Customer satisfaction is 4.3/5"]
-- [Metric 2 with specific target - e.g., "Retention is doubled per platform"]
+- [Metric 2 with specific target - e.g., "Retention is doubled"]
 - [Metric 3 with specific target]
 - [Metric 4 with specific target]
 
----
-
-## [Technical Appendix - if needed]
-
-### [Analysis area - e.g., Error rate analysis]
-
-[Description of the analysis being done]
-
-| [Category] | [Dimension 1] | [Dimension 2] | [Metric 1] | [Metric 2] |
-|------------|---------------|---------------|------------|------------|
-| [Row 1] | [Value] | [Value] | [Value] | [Value] |
-| [Row 2] | [Value] | [Value] | [Value] | [Value] |
-
-### [Specific issue 1]
-
-[Detailed analysis with specific numbers]
-
-### [Specific issue 2]
-
-[Detailed analysis with specific numbers]
 
 ### Conclusion
 
-[Summary of technical findings and implications for the decision]
+[Summary of findings and the decision]

@@ -50,8 +50,8 @@ For each issue you find:
 These are common patterns to look for when comparing drafts to examples or the tone guide:
 
 **Direct, formal language**
-- NOT: "Think about what makes a great PA great at helping you"
-- YES: "This document explores the mechanics of a good two-liner backed by research"
+- NOT: "Think about what makes this feature great at helping you"
+- YES: "This document explores the mechanics of a great feature backed by research"
 
 **Numbered source citations**
 - NOT: "Research shows that..."

@@ -33,7 +33,7 @@ Structure the note with:
 - **Title**: Descriptive, searchable title
 - **Date**: Today's date
 - **Source**: Where this came from (meeting, article, own thinking)
-- **Content**: The main content, cleaned up for clarity
+- **Content**: The main content, but never clean it up for clarity
 - **Tags**: Relevant topics for future searching
 - **Open questions**: Any follow-ups or things to explore
 

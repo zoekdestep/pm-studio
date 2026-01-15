@@ -3,7 +3,6 @@
 
 **Author:** [Name] (alias) | **Last modified:** [Date] | [Optional: tools/collaborators that helped]
 
----
 
 ## Introduction
 
@@ -13,7 +12,6 @@
 
 [1-2 sentences on what this doc does and doesn't do. Is it a playbook? An exploration? A recommendation?]
 
----
 
 ## [Framework Section Title]
 
@@ -21,9 +19,8 @@
 
 **Implication:** [Key takeaway from this section]
 
----
 
-## [Key Insight/Lever 1]
+## [Key Insight 1]
 
 [Heading that names the concept]
 
@@ -31,33 +28,35 @@
 
 **Example:** [Concrete example showing this in action]
 
----
 
-## [Key Insight/Lever 2]
+## [Key Insight 2]
 
-[Explanation with evidence]
-
-**Example:** [Concrete example]
-
----
-
-## [Key Insight/Lever 3]
+[Heading that names the concept]
 
 [Explanation with evidence]
 
 **Example:** [Concrete example]
 
----
 
-## [Key Insight/Lever 4]
+## [Key Insight 3]
+
+[Heading that names the concept]
 
 [Explanation with evidence]
 
 **Example:** [Concrete example]
 
----
 
-## Principles Based on These [Insights/Levers]
+## [Key Insight 4]
+
+[Heading that names the concept]
+
+[Explanation with evidence]
+
+**Example:** [Concrete example]
+
+
+## Principles Based on These [Insights]
 
 | [Category] | Principle |
 |------------|-----------|
@@ -66,13 +65,11 @@
 | [Insight 3] | [Actionable principle derived from the insight] |
 | [Insight 4] | [Actionable principle derived from the insight] |
 
----
 
-## [Additional Context Section - e.g., Personalization, Adjacent Considerations]
+## [Additional Context Section]
 
 [Any additional framing that affects how the principles apply]
 
----
 
 ## Applying These Principles to [Specific Problem]
 
@@ -88,7 +85,6 @@
 | [Type 2] | [Example of principles applied] |
 | [Type 3] | [Example of principles applied] |
 
----
 
 ## Follow-ups and Next Steps
 
@@ -104,7 +100,6 @@ Example [experiments/approaches] can include:
 2. [Option 2 with rationale]
 3. [Option 3 with rationale]
 
----
 
 ## Open Questions and Risks
 
@@ -118,10 +113,8 @@ Example [experiments/approaches] can include:
 
 [Description of the risk]
 
----
 
 ## Sources
 
 1. [Author]. ([Year]). [Title]. [Publication]. [Link if available]
-2. [Author]. ([Year]). [Title]. [Publication].
-3. [Continue numbered list...]
+2. [Continue numbered list...]

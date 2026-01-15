@@ -2,7 +2,6 @@
 
 **Author:** [Name] (alias) | **Last modified:** [Date]
 
----
 
 ## Introduction
 
@@ -18,13 +17,11 @@
 
 [1 paragraph making the argument for why this is the right thing to do. What evidence supports it?]
 
----
 
 ## Purpose of this document
 
 [1-2 sentences on what this doc is and isn't. What decision does it inform? What's out of scope?]
 
----
 
 ## Getting the Foundations Right
 
@@ -36,7 +33,6 @@
 
 [1-2 paragraphs on what we need to do first. Why this focus? What's the gap between current state and vision?]
 
----
 
 ## [Time Period] Goals
 
@@ -56,7 +52,6 @@ Our goals for [time period] are:
 | **[Workstream 2]** | [First milestone with timing] | [Second milestone with timing] | [Third milestone with timing] |
 | **[Workstream 3]** | [First milestone with timing] | [Second milestone with timing] | [Third milestone with timing] |
 
----
 
 ## Workstream #1 – [Name]
 
@@ -71,25 +66,45 @@ Our goals for [time period] are:
 
 **Dependency:** [Key dependencies and how you'll work with them]
 
----
+**Key challenge:** [The biggest risk or unknown]
+
+**Risk mitigation:** [How you're addressing it]
+
 
 ## Workstream #2 – [Name]
 
-[Description of what this workstream focuses on]
+[Description of what this workstream focuses on and why]
+
+### [Key deliverable or evaluation]
+
+| Item | Status/Assessment | Notes |
+|------|-------------------|-------|
+| [Item 1] | [Status] | [Details] |
+| [Item 2] | [Status] | [Details] |
+
+**Dependency:** [Key dependencies and how you'll work with them]
 
 **Key challenge:** [The biggest risk or unknown]
 
 **Risk mitigation:** [How you're addressing it]
 
----
-
 ## Workstream #3 – [Name]
 
-[Description of what this workstream focuses on]
+[Description of what this workstream focuses on and why]
 
-**Dependency:** [Key dependencies]
+### [Key deliverable or evaluation]
 
----
+| Item | Status/Assessment | Notes |
+|------|-------------------|-------|
+| [Item 1] | [Status] | [Details] |
+| [Item 2] | [Status] | [Details] |
+
+**Dependency:** [Key dependencies and how you'll work with them]
+
+**Key challenge:** [The biggest risk or unknown]
+
+**Risk mitigation:** [How you're addressing it]
+
 
 ## Alignment with [Adjacent Initiatives]
 
@@ -99,7 +114,6 @@ Our goals for [time period] are:
 
 **[Initiative 2].** [How it relates and what coordination is needed]
 
----
 
 ## Open Questions and Unknowns
 
@@ -111,13 +125,10 @@ Other unknowns and open questions include:
 - [Question 2]
 - [Question 3]
 
----
 
 ## Team
 
 **Core team:**
-- [Role]: [Name]
-- [Role]: [Name]
 - [Role]: [Name]
 
 **Partner team:**

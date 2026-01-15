@@ -12,7 +12,6 @@ PM Studio is a structured environment for PM "deep work" - writing that requires
 4. **Auto-saves to the right place** - Specs, strategies, and shipping decisions go to `/output/`
 5. **Catches gaps** - Runs specialized agents to find missing pieces
 
----
 
 ## Prerequisites
 
@@ -21,7 +20,6 @@ Before you begin, make sure you have:
 - [ ] **VS Code** installed → [Download VS Code](https://code.visualstudio.com/download)
 - [ ] **Claude Code extension** installed in VS Code (search "Claude Code" in the Extensions panel)
 
----
 
 ## Quick Start
 
@@ -44,7 +42,6 @@ git clone [this-repo-url]
 3. Select **"Download ZIP"**
 4. Unzip the downloaded file to a location you'll remember (e.g., your Documents folder)
 
----
 
 ### 2. Open in VS Code
 
@@ -55,13 +52,11 @@ git clone [this-repo-url]
 
 You should see the folder structure in the left sidebar.
 
----
 
 ### 3. Start Claude Code
 
 Click the **Claude Code logo** in the top-right corner of VS Code to open the Claude Code panel.
 
----
 
 ### 4. Fill in Your Context
 
@@ -74,7 +69,7 @@ PM Studio works best when it knows about you and your product. Fill in these fil
 | `context/technical-context.md` | Architecture, constraints, team structure | Optional - paste a tech spec and ask Claude to fill it |
 | `context/tone-and-voice.md` | Your writing style | Good defaults included - customize as needed |
 
-### 5. Add Your Examples (Optional but Strongly Recommended)
+### 5. Add Your Examples
 
 Put your best docs in `context/examples/`. PM Studio can use those to learn your structure and tone.
 
@@ -86,7 +81,6 @@ This is where the fun starts! Try one of the commands below. For example, to wri
 /spec citations-in-chat
 ```
 
----
 
 ## Commands
 
@@ -100,7 +94,6 @@ This is where the fun starts! Try one of the commands below. For example, to wri
 | `/ideate [space]` | Generate ideas by synthesizing your notes | - |
 | `/word [file]` | Export a markdown file to Word and open it | `/output/` |
 
----
 
 ## Agents
 
@@ -117,7 +110,6 @@ After writing, run specialized agents to improve your docs:
 | `question-generator` | Surfaces questions worth exploring | Research, Strategy |
 | `critical-reader` | Finds gaps, assumptions, and logical flaws via Socratic questions | All docs |
 
----
 
 ## Best Practices
 
@@ -137,16 +129,17 @@ Update `product-context.md` when:
 
 ### 3. Add Your Best Docs as Examples
 
-Put 2-3 of your best specs/strategies in `context/examples/`. PM Studio learns:
+Put 4-5 of your best specs/strategies in `context/examples/`. PM Studio learns:
 - Your structure preferences
 - Your level of detail
 - Your tone and voice
+
 After uploading the documents, don't forget to tell PM Studio to update the templates and voice documents from these.
 
 ### 4. Use Agents Iteratively
 
 Don't just run one agent. Common flow:
-1. Write draft using one of the commands
+1. Write a draft using one of the commands
 2. Run **Edge Case Finder** - add scenarios
 3. Run **Completeness Checker** - fix gaps
 4. Run **Editor** - polish before sharing
@@ -157,7 +150,6 @@ The competitive landscape and industry trends sections can be filled by Claude:
 - "Research my competitors in [space] and fill out the competitive landscape"
 - "What are the latest trends in [area]?"
 
----
 
 ## Folder Structure
 
@@ -182,11 +174,11 @@ pm-studio/
 │   ├── specs/          # Generated specs (auto-saved)
 │   ├── strategies/     # Generated strategy docs (auto-saved)
 │   └── shipping-decisions/  # Generated shipping decisions (auto-saved)
-├── CLAUDE.md           # System prompt
-└── README.md           # This file
+├── CLAUDE.md           # Instructions for Claude
+├── README.md           # This file
+└── NEXT-STEPS.md       # Recommended workflow to get started after installing
 ```
 
----
 
 ## Customization
 
@@ -194,42 +186,21 @@ pm-studio/
 
 1. Put your best docs in `context/examples/`
 2. Edit `context/tone-and-voice.md` to capture your style
-3. The Editor agent will help match them
+3. The Editor agents will help match them
 
 ### Modifying Templates
 
 Templates in `context/templates/` define the structure for each doc type. Customize them to match your own or your organization's standards.
 
-### Creating New Commands
+### Creating New Commands and Agents
 
-Add new `.md` files to `.claude/commands/` following the existing pattern:
+Make PM Studio your own! Add new `.md` files to `.claude/commands/` or `.claude/agents/`, with clear instructions for the command or for the agent's role and output format. Or ask Claude to do so! 
 
-```markdown
----
-description: What this command does
-arguments:
-  - name: arg_name
-    description: What this argument is
-    required: true
----
-
-[Your command instructions here]
-
-Or ask Claude to create new commands!
-
-```
-
-### Creating New Agents
-
-Add new `.md` files to `.claude/agents/` with clear instructions for the agent's role and output format. Or ask Claude to do so!
-
----
 
 ## Credits
 
 This project was inspired by [SEOMachine](https://github.com/TheCraigHewitt/seomachine) by Craig Hewitt - a Claude Code workspace for SEO content creation that demonstrated how to structure AI-assisted writing workflows.
 
----
 
 ## License
 

@@ -95,13 +95,12 @@ For specs and strategies, include a section on competitive context:
 Always start from the templates in `/context/templates/`. They encode the right structure and sections for each doc type.
 
 ### 8. Offer Agent Analysis
-After writing any document, offer to run relevant agents:
+After writing any document, offer to run relevant agents, for example:
 - **Completeness Checker** - for all docs
 - **Edge Case Finder** - especially for specs
 - **Metrics Designer** - for specs and shipping decisions
 - **Editor** - polish for readability and tone before sharing
 
----
 
 ## Available Commands
 
@@ -115,7 +114,6 @@ After writing any document, offer to run relevant agents:
 | `/ideate [space]` | Generate ideas by synthesizing notes and context | - |
 | `/word [file]` | Export a markdown file to Word and open it | - |
 
----
 
 ## Available Agents
 
@@ -132,7 +130,6 @@ Agents provide focused analysis after document generation:
 | **question-generator** | Suggests open questions worth exploring |
 | **critical-reader** | Finds gaps, assumptions, and logical flaws; asks Socratic questions to resolve them |
 
----
 
 ## Folder Structure
 
@@ -159,10 +156,9 @@ pm-studio/
 │   └── shipping-decisions/ # Auto-saved shipping decisions
 ├── CLAUDE.md               # This file - instructions for Claude
 ├── README.md               # Project overview and setup guide
-└── NEXT-STEPS.md           # Roadmap and future improvements
+└── NEXT-STEPS.md           # Recommended workflow to get started after installing improvements
 ```
 
----
 
 ## Working with Notes
 
@@ -177,7 +173,6 @@ When saving notes with `/note`:
 - Keep notes raw - don't apply tone formatting
 - Ask if there are follow-up thoughts to capture
 
----
 
 ## Quality Standards
 

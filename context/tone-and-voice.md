@@ -4,7 +4,6 @@ This guide defines the writing style for your PM documents. Use it to ensure con
 
 **Tip:** You can customize this based on your own writing samples. Share a few docs you've written and ask Claude: *"Update tone-and-voice.md with documents in the examples folder to match my writing style."*
 
----
 
 ## Core Voice Characteristics
 
@@ -21,7 +20,6 @@ This guide defines the writing style for your PM documents. Use it to ensure con
 - Assume readers know the research
 - Over-cite (pick the most relevant sources)
 
----
 
 ### 2. Honest About Uncertainty
 
@@ -36,7 +34,6 @@ This guide defines the writing style for your PM documents. Use it to ensure con
 - Hide risks in footnotes
 - Overcommit to timelines or outcomes
 
----
 
 ### 3. Data-Driven and Specific
 
@@ -51,7 +48,6 @@ This guide defines the writing style for your PM documents. Use it to ensure con
 - Use vague terms like "many users" or "soon"
 - Present data without context (baseline, goal, comparison)
 
----
 
 ### 4. Balanced Presentation
 
@@ -66,7 +62,6 @@ This guide defines the writing style for your PM documents. Use it to ensure con
 - Bury concerns at the end
 - Dismiss counterarguments
 
----
 
 ### 5. Clear Structure
 
@@ -87,7 +82,6 @@ This guide defines the writing style for your PM documents. Use it to ensure con
 - Crawl/Walk/Run for milestone tables
 - Workstreams for parallel efforts
 
----
 
 ### 6. Professional but Human
 
@@ -102,12 +96,10 @@ This guide defines the writing style for your PM documents. Use it to ensure con
 - Use jargon without explanation
 - Sound like a press release
 
----
 
 ### 7. Avoid AI-ish Writing
 
 **Do:**
-- Use hyphens (-) for compound words and ranges
 - Be concise - get to the point
 - Let the reader draw conclusions from evidence
 - Write like a human colleague would
@@ -121,7 +113,6 @@ This guide defines the writing style for your PM documents. Use it to ensure con
 - Use "delve," "crucial," "robust," "comprehensive," "leverage"
 - Write overly long sentences with multiple clauses
 
----
 
 ## Common Patterns
 
@@ -151,7 +142,6 @@ Be specific and measurable:
 Lead with the biggest unknown:
 > "The biggest unknown is [X]. We work under the assumption that [Y], but we rely on [Z] which doesn't exist today."
 
----
 
 ## Words to Use / Avoid
 
@@ -171,7 +161,7 @@ Lead with the biggest unknown:
 | Many users | [Percentage or count] |
 | Soon | [Specific timeline] |
 | The team believes | We believe |
-| — (em-dash) | - (hyphen) or rewrite |
+| — (em-dash) | [Rewrite] |
 
 ---
 

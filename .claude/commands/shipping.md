@@ -22,7 +22,7 @@ Report what you found that's relevant.
 Before writing, gather information through an askback interview. Ask 2-3 questions at a time:
 
 **Current State**
-- What's the current rollout state? (% of users, which rings/audiences)
+- What's the current rollout state? (% of users, which audiences)
 - How long has it been in this state?
 - What's the proposed next step? (expand rollout, hold, pull back)
 
@@ -52,13 +52,12 @@ Key sections to include:
 - Learnings
   - Business metrics (with specific numbers and trends)
   - Customer sentiment (balanced - both positive and concerns)
-  - Partner learnings (if relevant)
+  - Other learnings (if relevant)
 - Road ahead
   - Recommendation with reasoning (pros, risks, evidence, fallback)
   - Platform-specific considerations
   - Future steps
 - Success criteria for this rollout phase
-- Technical appendix (error analysis, etc. if relevant)
 
 **IMPORTANT: Auto-save the shipping decision** to `/output/shipping-decisions/` with filename `$ARGUMENTS.feature.md`. Create the directory if it doesn't exist. Do this automatically without asking.
 

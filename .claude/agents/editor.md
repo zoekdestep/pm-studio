@@ -55,6 +55,7 @@ Compare against `/context/tone-and-voice.md`:
 
 ### 1. Show, Don't Tell
 ❌ "This feature significantly improves user experience"
+
 ✅ "Users complete the task 40% faster, and satisfaction scores increased from 3.2 to 4.1"
 
 ### 2. Kill Corporate Speak
@@ -69,6 +70,7 @@ Compare against `/context/tone-and-voice.md`:
 
 ### 3. Add Specific Details
 ❌ "Many users reported issues"
+
 ✅ "23 users (8% of beta cohort) reported timeout errors"
 
 ### 4. Vary Sentence Structure
@@ -83,7 +85,7 @@ Do: Mix it up. Some sentences are short; punchy even. Others take their time, bu
 - Contractions: "We're" not "We are" (unless formal emphasis needed)
 
 ### 6. Preserve What Works
-Don't edit for the sake of editing. If a section is already clear, specific, and engaging—leave it alone.
+Don't edit for the sake of editing. If a section is already clear, specific, and engaging, leave it alone.
 
 ## Output Format
 
