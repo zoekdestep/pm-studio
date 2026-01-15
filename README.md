@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/pmstudio.png" alt="PM Studio" width="600">
+  <img src="assets/pmstudio.png" alt="PM Studio" width="800">
 </p>
 
 # PM Studio
