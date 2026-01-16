@@ -22,7 +22,7 @@ PM Studio is a structured environment for PM "deep work" - writing that requires
 Before you begin, make sure you have:
 
 - [ ] **VS Code** installed → [Download VS Code](https://code.visualstudio.com/download)
-- [ ] **Claude Code extension** installed in VS Code (search "Claude Code" in the Extensions panel)
+- [ ] **Claude Code extension** installed in VS Code (use [this link](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) or search "Claude Code" in the Extensions panel)
 
 
 ## Quick Start
@@ -34,7 +34,7 @@ Before you begin, make sure you have:
 If you have git installed, open your terminal and run:
 
 ```bash
-git clone [this-repo-url]
+git clone https://github.com/zoekdestep/pm-studio.git
 ```
 
 **What this does:** Creates a copy of the project on your computer. The advantage of cloning is you can pull updates later.
@@ -64,7 +64,7 @@ Click the **Claude Code logo** in the top-right corner of VS Code to open the Cl
 
 ### 4. Fill in Your Context
 
-PM Studio works best when it knows about you and your product. Fill in these files:
+PM Studio works best when it knows about you and your product. See NEXT-STEPS.md for a guided walkthrough, or jump straight into these context files:
 
 | File | What to Add | Tips |
 |------|-------------|------|
