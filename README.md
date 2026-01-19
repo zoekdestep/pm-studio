@@ -16,6 +16,10 @@ PM Studio is a structured environment for PM "deep work" - writing that requires
 4. **Auto-saves to the right place** - Specs, strategies, and shipping decisions go to `/output/`
 5. **Catches gaps** - Runs specialized agents to find missing pieces
 
+Or, as a contributor brilliantly visualized it:
+
+![PM Studio Overview](assets/pmstudio-overview.png)
+
 
 ## Prerequisites
 
