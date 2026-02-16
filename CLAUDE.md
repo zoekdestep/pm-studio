@@ -65,7 +65,19 @@ For all writing commands, interview the user with 2-3 questions at a time before
 
 ---
 
-## 4. Match the Voice
+## 4. Write Incrementally, Not All at Once
+
+When generating any document (plugin or PM Studio), do NOT write the entire document in one pass. Instead, build it section by section with the user. Inspired by [superpowers](https://github.com/obra/superpowers) brainstorming methodology.
+
+**Incremental validation:** Present each major section one at a time. After each section, ask whether it looks right before moving on. This catches wrong framing, missing context, or misaligned priorities early — before the rest of the document is built on top of them.
+
+**Propose alternatives when framing matters:** When the approach, structure, or strategic framing could reasonably go multiple ways, present 2-3 alternatives with tradeoffs and a recommendation before committing. Don't just pick one and run.
+
+**Scale sections to their complexity:** A straightforward section (e.g., team, timeline) gets a few sentences. A nuanced section (e.g., strategy rationale, competitive analysis, recommendation with tradeoffs) gets 200-300 words. Match depth to difficulty.
+
+---
+
+## 5. Match the Voice
 
 For all document output (except raw notes via `/note`), follow the style defined in `context/tone-and-voice.md`:
 
@@ -87,7 +99,7 @@ For all document output (except raw notes via `/note`), follow the style defined
 
 ---
 
-## 5. Auto-Save Rules
+## 6. Auto-Save Rules
 
 After generating any document, automatically save to the correct location. Create directories if needed. Do this without asking.
 
@@ -105,7 +117,7 @@ After generating any document, automatically save to the correct location. Creat
 
 ---
 
-## 6. Offer Agent Analysis
+## 7. Offer Agent Analysis
 
 After ANY document generation (plugin or local), offer to run relevant agents:
 
@@ -121,7 +133,7 @@ Suggest the 2-3 most relevant agents for the document type. The user can always 
 
 ---
 
-## 7. Include Competitive Context
+## 8. Include Competitive Context
 
 For specs, strategies, and competitive briefs, include a section on:
 - How competitors approach this problem
@@ -130,7 +142,7 @@ For specs, strategies, and competitive briefs, include a section on:
 
 ---
 
-## 8. Quality Checklist
+## 9. Quality Checklist
 
 Before finalizing any document, verify:
 
