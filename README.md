@@ -16,10 +16,6 @@ PM Studio uses a **layered architecture**:
 
 When you work inside the PM Studio workspace, all three layers are active. CLAUDE.md enhances everything.
 
-Or, as [DreamerAlbert](https://github.com/DreamerAlbert) brilliantly visualized it:
-
-![PM Studio Overview](assets/pmstudio-overview.png)
-
 
 ## Prerequisites
 
