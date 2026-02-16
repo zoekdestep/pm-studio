@@ -12,7 +12,7 @@ PM Studio uses a **layered architecture**:
 
 - **The plugin** provides commands (`/product-management:*`), deep methodology (6 skills), and MCP connectors. It auto-updates from the marketplace.
 - **WorkIQ** provides always-on access to your M365 data: emails, meeting transcripts, documents, and team discussions. Every command queries it by default.
-- **PM Studio** provides the workspace: agents, personal context, notes, voice matching, output organization, and quality standards (via `CLAUDE.md`).
+- **PM Studio** provides the workspace: additional commands, agents, personal context, notes, voice matching, output organization, and quality standards (via `CLAUDE.md`).
 
 When you work inside the PM Studio workspace, all three layers are active. CLAUDE.md enhances everything.
 
@@ -25,8 +25,6 @@ When you work inside the PM Studio workspace, all three layers are active. CLAUD
   ```bash
   claude plugin marketplace add product-management@knowledge-work-plugins
   ```
-
-**Required:**
 - [ ] WorkIQ MCP for Microsoft 365 integration (emails, meetings, documents). Pre-configured in PM Studio's `.mcp.json` and starts automatically. Accept the EULA on first use.
 
 **Optional:**
