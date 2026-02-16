@@ -4,16 +4,17 @@
 
 # PM Studio
 
-A Claude Code workspace layer for product managers. Built on top of the [Anthropic product-management plugin](https://github.com/anthropics/claude-code-plugins), PM Studio adds personal context, voice matching, a knowledge base, quality standards, and a refinement agent pipeline to every command you run.
+A Claude Code workspace layer for product managers. Built on top of the [Anthropic product-management plugin](https://github.com/anthropics/claude-code-plugins) and [WorkIQ](https://github.com/microsoft/work-iq-mcp) for Microsoft 365, PM Studio adds personal context, voice matching, a knowledge base, quality standards, and a refinement agent pipeline to every command you run.
 
 ## How It Works
 
 PM Studio uses a **layered architecture**:
 
 - **The plugin** provides commands (`/product-management:*`), deep methodology (6 skills), and MCP connectors. It auto-updates from the marketplace.
+- **WorkIQ** provides always-on access to your M365 data: emails, meeting transcripts, documents, and team discussions. Every command queries it by default.
 - **PM Studio** provides the workspace: agents, personal context, notes, voice matching, output organization, and quality standards (via `CLAUDE.md`).
 
-When you work inside the PM Studio workspace with the plugin installed, both layers are active. CLAUDE.md enhances everything.
+When you work inside the PM Studio workspace, all three layers are active. CLAUDE.md enhances everything.
 
 Or, as [DreamerAlbert](https://github.com/DreamerAlbert) brilliantly visualized it:
 
