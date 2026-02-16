@@ -4,17 +4,16 @@
 
 # PM Studio
 
-A Claude Code workspace for product managers to write high-quality specs, strategy docs, and shipping decisions through collaborative AI dialogue.
+A Claude Code workspace layer for product managers. Built on top of the [Anthropic product-management plugin](https://github.com/anthropics/claude-code-plugins), PM Studio adds personal context, voice matching, a knowledge base, quality standards, and a refinement agent pipeline to every command you run.
 
-## What This Is
+## How It Works
 
-PM Studio is a structured environment for PM "deep work" - writing that requires focused thinking, research synthesis, and clear reasoning. Instead of generating docs from thin prompts, it acts as a **thinking partner** that:
+PM Studio uses a **layered architecture**:
 
-1. **Researches before writing** - Checks your notes, context, and does competitor/market research
-2. **Asks before writing** - Conducts discovery interviews to understand your goals
-3. **Matches your voice** - Applies your tone guide (except for raw notes)
-4. **Auto-saves to the right place** - Specs, strategies, and shipping decisions go to `/output/`
-5. **Catches gaps** - Runs specialized agents to find missing pieces
+- **The plugin** provides commands (`/product-management:*`), deep methodology (6 skills), and MCP connectors. It auto-updates from the marketplace.
+- **PM Studio** provides the workspace: agents, personal context, notes, voice matching, output organization, and quality standards (via `CLAUDE.md`).
+
+When you work inside the PM Studio workspace with the plugin installed, both layers are active. CLAUDE.md enhances everything.
 
 Or, as [DreamerAlbert](https://github.com/DreamerAlbert) brilliantly visualized it:
 
@@ -23,191 +22,154 @@ Or, as [DreamerAlbert](https://github.com/DreamerAlbert) brilliantly visualized 
 
 ## Prerequisites
 
-Before you begin, make sure you have:
+**Required:**
+- [ ] [Claude Code](https://docs.anthropic.com/en/docs/claude-code) (VS Code extension or CLI)
+- [ ] Anthropic product-management plugin:
+  ```bash
+  claude plugin marketplace add product-management@knowledge-work-plugins
+  ```
 
-- [ ] **VS Code** installed → [Download VS Code](https://code.visualstudio.com/download)
-- [ ] **Claude Code extension** installed in VS Code (use [this link](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) or search "Claude Code" in the Extensions panel)
+**Required:**
+- [ ] WorkIQ MCP for Microsoft 365 integration (emails, meetings, documents). Pre-configured in PM Studio's `.mcp.json` and starts automatically. Accept the EULA on first use.
+
+**Optional:**
+- Additional MCP connectors (Slack, Linear, Figma, etc.) can be added to `.mcp.json`
+- [Superwhisper](https://superwhisper.com/) for voice-based brainstorming
+
+> **WorkIQ is always on.** Every command (plugin and PM Studio) queries WorkIQ for relevant emails, meetings, and documents by default. Tell Claude to skip it if you don't want it for a specific command.
 
 
 ## Quick Start
 
-### 1. Get the Project Files
-
-#### Option A: Clone with Git (Recommended)
-
-If you have git installed, open your terminal and run:
+### 1. Get PM Studio
 
 ```bash
 git clone https://github.com/zoekdestep/pm-studio.git
 ```
 
-**What this does:** Creates a copy of the project on your computer. The advantage of cloning is you can pull updates later.
-
-#### Option B: Download as ZIP (If you're not familiar with git)
-
-1. Go to the GitHub repository page
-2. Click the green **"Code"** button
-3. Select **"Download ZIP"**
-4. Unzip the downloaded file to a location you'll remember (e.g., your Documents folder)
-
+Or download as ZIP from the GitHub repository page.
 
 ### 2. Open in VS Code
 
-1. Open VS Code
-2. Go to **File → Open Folder**
-3. Navigate to the `pm-studio` folder you downloaded/cloned
-4. Click **Open**
+Open the `pm-studio` folder in VS Code, then open the Claude Code panel.
 
-You should see the folder structure in the left sidebar.
+### 3. Personalize
 
+Fill in your context files:
 
-### 3. Start Claude Code
+| File | What to Add |
+|------|-------------|
+| `context/about-me.md` | Your role, stakeholders, priorities, PM philosophy |
+| `context/product-context.md` | Product strategy, user segments, metrics, competitive landscape, technical constraints |
+| `context/tone-and-voice.md` | Your writing style (good defaults included) |
+| `context/examples/` | 4-5 of your best docs (these drive both voice AND structure for all output) |
 
-Click the **Claude Code logo** in the top-right corner of VS Code to open the Claude Code panel.
+### 4. Start Writing
 
-
-### 4. Fill in Your Context
-
-PM Studio works best when it knows about you and your product. See NEXT-STEPS.md for a guided walkthrough, or jump straight into these context files:
-
-| File | What to Add | Tips |
-|------|-------------|------|
-| `context/about-me.md` | Your role, stakeholders, priorities, PM philosophy | Examples included - just replace them |
-| `context/product-context.md` | Product strategy, user segments, metrics, competitive landscape | Ask Claude to research competitors for you |
-| `context/technical-context.md` | Architecture, constraints, team structure | Optional - paste a tech spec and ask Claude to fill it |
-| `context/tone-and-voice.md` | Your writing style | Good defaults included - customize as needed |
-
-### 5. Add Your Examples
-
-Put your best docs in `context/examples/`. PM Studio can use those to learn your structure and tone.
-
-### 6. Start Writing!
-
-This is where the fun starts! Try one of the commands below. For example, to write a spec about citations in chat:
+Run any command. For example:
 
 ```
-/spec citations-in-chat
+/product-management:write-spec
+/strategy competitive-positioning
+/shipping dark-mode
 ```
+
+CLAUDE.md automatically enhances every command with your context, voice, and quality standards.
+
+See [NEXT-STEPS.md](NEXT-STEPS.md) for a complete getting-started walkthrough.
 
 
 ## Commands
 
-| Command | Purpose | Output Location |
-|---------|---------|-----------------|
-| `/spec [feature]` | Write a product spec with goals, workstreams, milestones | `/output/specs/` |
-| `/strategy [topic]` | Write a research-backed strategy doc | `/output/strategies/` |
-| `/shipping [feature]` | Write a shipping decision with metrics and recommendation | `/output/shipping-decisions/` |
-| `/note [content]` | Capture a note to your knowledge base | `/notes/` |
-| `/find [query]` | Search across all your notes and context | - |
-| `/ideate [space]` | Generate ideas by synthesizing your notes | - |
-| `/word [file]` | Export a markdown file to Word and open it | `/output/` |
+### PM Studio Commands
+
+| Command | Purpose | Output |
+|---------|---------|--------|
+| `/strategy [topic]` | Write a research-backed strategy doc | `output/strategies/` |
+| `/shipping [feature]` | Write a shipping decision with metrics and recommendation | `output/shipping-decisions/` |
+| `/note [content]` | Capture a note to your knowledge base | `notes/` |
+| `/word [file]` | Export markdown to Word | `output/` |
+
+### Product-Management Plugin Commands
+
+| Command | Purpose | Output |
+|---------|---------|--------|
+| `/product-management:write-spec` | Write a feature spec or PRD | `output/specs/` |
+| `/product-management:roadmap-update` | Create or reprioritize a roadmap | `output/roadmaps/` |
+| `/product-management:stakeholder-update` | Generate a stakeholder update | `output/stakeholder-updates/` |
+| `/product-management:metrics-review` | Review and analyze product metrics | `output/metrics-reviews/` |
+| `/product-management:competitive-brief` | Create a competitive analysis brief | `output/competitive-briefs/` |
+| `/product-management:synthesize-research` | Synthesize user research into insights | `output/research-syntheses/` |
+
+All plugin commands are enhanced by PM Studio's context loading, voice matching, auto-save, and agent offering.
 
 
 ## Agents
 
-After writing, run specialized agents to improve your docs:
+PM Studio's unique value: a post-generation refinement pipeline. After any document is generated (plugin or PM Studio), run agents to improve it.
 
 | Agent | What It Does | Best For |
 |-------|--------------|----------|
-| `completeness-checker` | Finds missing sections and gaps in reasoning | All docs |
-| `edge-case-finder` | Surfaces scenarios and "what ifs" you might miss | Specs |
-| `metrics-designer` | Suggests KPIs, guardrails, measurement approaches | Specs, Shipping decisions |
-| `editor` | Polishes for readability, clarity, and tone | All docs before sharing |
-| `tone-editor` | Compares against your voice examples | When tone feels off |
-| `connection-finder` | Links ideas across your notes | Strategy docs |
-| `question-generator` | Surfaces questions worth exploring | Research, Strategy |
-| `critical-reader` | Finds gaps, assumptions, and logical flaws via Socratic questions | All docs |
+| **reviewer** | Two-pass review: structural completeness + Socratic reasoning analysis | All docs |
+| **editor** | Reads your voice examples, applies full editorial pass | All docs before sharing |
+| **edge-case-finder** | Surfaces scenarios, risks, and failure modes | Specs, roadmaps |
+| **metrics-designer** | Suggests KPIs, guardrails, and measurement plans | Specs, shipping decisions |
+| **question-generator** | Surfaces questions worth exploring | Strategy, research |
+
+Common flow: generate a doc, run **reviewer** to find gaps, run **editor** for polish.
 
 
-## Best Practices
+## Connector Architecture
 
-### 1. Feed Your Knowledge Base
+**WorkIQ (always on):** Every command queries WorkIQ for M365 data (emails, meetings, transcripts, documents) by default. No setup needed beyond accepting the EULA on first use.
 
-The more you use `/note`, the smarter PM Studio gets:
-- After every meeting with insights -> `/note`
-- When you read something interesting -> `/note`
-- Random shower thought -> `/note`
+**Optional connectors** use `~~category` placeholders for additional data:
 
-### 2. Keep Context Files Updated
+| Category | Data Source | Example MCP |
+|----------|-----------|-------------|
+| `~~product analytics` | Usage metrics, trends | Your analytics MCP |
+| `~~user feedback` | Support tickets, sentiment | Your feedback MCP |
+| `~~project tracker` | Work items, rollout status | Linear, Jira MCPs |
 
-Update `product-context.md` when:
-- Strategy changes
-- New competitors emerge
-- Metrics evolve
-
-### 3. Add Your Best Docs as Examples
-
-Put 4-5 of your best specs/strategies in `context/examples/`. PM Studio learns:
-- Your structure preferences
-- Your level of detail
-- Your tone and voice
-
-After uploading the documents, don't forget to tell PM Studio to update the templates and voice documents from these.
-
-### 4. Use Agents Iteratively
-
-Don't just run one agent. Common flow:
-1. Write a draft using one of the commands
-2. Run **Edge Case Finder** - add scenarios
-3. Run **Completeness Checker** - fix gaps
-4. Run **Editor** - polish before sharing
-
-### 5. Let Claude Do the Research
-
-The competitive landscape and industry trends sections can be filled by Claude:
-- "Research my competitors in [space] and fill out the competitive landscape"
-- "What are the latest trends in [area]?"
+Optional connectors are skipped silently when not available. See [CONNECTORS.md](CONNECTORS.md) for details.
 
 
-## Folder Structure
+## Workspace Structure
 
 ```
 pm-studio/
 ├── .claude/
-│   ├── commands/       # Slash command definitions
-│   └── agents/         # Agent definitions
+│   ├── agents/              # 5 refinement agents
+│   └── commands/            # PM Studio commands
 ├── context/
-│   ├── examples/       # Your example docs (for tone/structure)
-│   ├── templates/      # Doc templates
-│   ├── tone-and-voice.md
-│   ├── about-me.md
-│   ├── product-context.md
-│   └── technical-context.md
+│   ├── examples/            # Your reference docs (voice + structure)
+│   ├── about-me.md          # Role, preferences, PM philosophy
+│   ├── product-context.md   # Strategy, metrics, competitors, tech constraints
+│   └── tone-and-voice.md    # Writing style guide
 ├── notes/
-│   ├── ideas/          # Raw ideas, hunches
-│   ├── research/       # User research, data findings
-│   ├── meetings/       # Meeting notes, decisions
-│   └── reading/        # External articles, learnings
-├── output/
-│   ├── specs/          # Generated specs (auto-saved)
-│   ├── strategies/     # Generated strategy docs (auto-saved)
-│   └── shipping-decisions/  # Generated shipping decisions (auto-saved)
-├── CLAUDE.md           # Instructions for Claude
-├── README.md           # This file
-└── NEXT-STEPS.md       # Recommended workflow to get started after installing
+│   ├── ideas/               # Raw ideas, hunches
+│   ├── research/            # User research, data findings
+│   └── reading/             # Articles, books, learnings
+├── output/                  # Auto-saved documents (8 subdirectories)
+├── .mcp.json                # MCP server config (WorkIQ)
+├── CLAUDE.md                # Workspace enhancement layer
+├── CONNECTORS.md            # Connector architecture
+└── NEXT-STEPS.md            # Getting started guide
 ```
 
 
 ## Customization
 
-### Adding Your Voice
+**Voice**: Put your best docs in `context/examples/`, edit `context/tone-and-voice.md`. The editor agent uses both.
 
-1. Put your best docs in `context/examples/`
-2. Edit `context/tone-and-voice.md` to capture your style
-3. The Editor agents will help match them
+**Agents and commands**: Add `.md` files to `.claude/agents/` or `.claude/commands/`. Or ask Claude to create them for you.
 
-### Modifying Templates
-
-Templates in `context/templates/` define the structure for each doc type. Customize them to match your own or your organization's standards.
-
-### Creating New Commands and Agents
-
-Make PM Studio your own! Add new `.md` files to `.claude/commands/` or `.claude/agents/`, with clear instructions for the command or for the agent's role and output format. Or ask Claude to do so! 
+**Connectors**: Add MCP servers to `.mcp.json` and map them to `~~category` placeholders in commands. WorkIQ is always on by default.
 
 
 ## Credits
 
-This project was inspired by [SEOMachine](https://github.com/TheCraigHewitt/seomachine) by Craig Hewitt - a Claude Code workspace for SEO content creation that demonstrated how to structure AI-assisted writing workflows.
+This project was inspired by [SEOMachine](https://github.com/TheCraigHewitt/seomachine) by Craig Hewitt. The product-management methodology comes from the [Anthropic product-management plugin](https://github.com/anthropics/claude-code-plugins).
 
 
 ## License

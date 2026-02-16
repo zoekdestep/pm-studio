@@ -1,130 +1,123 @@
-# Getting Started: Your First Two Weeks
+# Getting Started
 
-A recommended workflow for getting the most out of PM Studio.
+A step-by-step guide to setting up PM Studio and running your first end-to-end workflow.
 
 
-## Week 1: Setup & First Use
+## Step 1: Install Dependencies
 
-### Day 1: Context Files (30-45 min)
+**Claude Code** (if not already installed):
+- VS Code: Install the [Claude Code extension](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code)
+- CLI: Follow the [Claude Code docs](https://docs.anthropic.com/en/docs/claude-code)
 
-The quality of your outputs depends heavily on your context files. Start with these:
-
-| File | What to Add |
-|------|-------------|
-| `context/about-me.md` | Your role, stakeholders, how you work |
-| `context/product-context.md` | Product strategy, user segments, metrics |
-
-**Tip:** Don't overthink it. Start with the basics and refine over time. You can ask Claude to help fill in sections like competitive landscape.
-
-Lower priority files (`technical-context.md`, `tone-and-voice.md`) can wait until you need them.
-
-### Day 2: Add Your Examples (15-30 min)
-
-Put 4-5 of your best docs in `context/examples/`:
-- A spec you're proud of
-- A strategy doc that landed well
-- A shipping decision that was well-received
-- A doc that captures your voice nicely
-
-You can then ask PM Studio to update the templates and tone documents with your structure, level of detail, and voice from these examples.
-
-### Day 3: First Real Use
-
-Pick something you're actually working on:
-
-```
-/spec [feature you're speccing]
-/strategy [topic you're exploring]
+**Product-management plugin** (required):
+```bash
+claude plugin marketplace add product-management@knowledge-work-plugins
 ```
 
-**What to expect:**
-1. Claude searches your notes and context
-2. Does competitor/market research
-3. Asks you 2-3 questions at a time
-4. Writes a draft and auto-saves to `/output/`
-5. Offers to run agents (completeness checker, edge case finder, etc.)
+**WorkIQ for M365** (required):
+WorkIQ is pre-configured in PM Studio's `.mcp.json` and starts automatically. On first use, you'll be prompted to accept the EULA and sign in with your Microsoft account. Every command queries WorkIQ by default for relevant emails, meetings, and documents.
 
-Your first doc won't be perfect - the system improves as you add more context over time. 
+**Open PM Studio:**
+```bash
+cd pm-studio
+code .
+```
+Then open the Claude Code panel in VS Code.
 
-### Days 4-5: Build Your Knowledge Base
 
-**Port over existing notes:** If you have notes in another tool (Notion, OneNote, etc.), bring them over to `/notes/`. The more context Claude has, the better.
+## Step 2: Personalize
 
-**Capture new notes from your daily work:**
+Fill in your context files. These are what make PM Studio's output sound like you, not a generic AI.
+
+| File | What to add | Time |
+|------|-------------|------|
+| `context/about-me.md` | Your role, stakeholders, how you work, current priorities | 10 min |
+| `context/product-context.md` | Product strategy, user segments, metrics, competitors, technical constraints | 15-20 min |
+| `context/tone-and-voice.md` | Your writing style (good defaults included, customize as needed) | 5-10 min |
+
+**Add examples:** Put 4-5 of your best docs in `context/examples/`. These are the most important input for voice matching. Specs, strategy docs, shipping decisions, anything that captures how you write.
+
+**Tip:** Don't overthink it. Start with the basics and refine over time. You can ask Claude to research competitors and fill out the competitive landscape section.
+
+
+## Step 3: Try It End-to-End
+
+Pick something you're actually working on and run a plugin command from inside the workspace:
 
 ```
-/note Had a meeting with design today. They're concerned about...
-/note Read an interesting article about how Notion handles...
-/note Random thought: what if we approached this differently...
+/product-management:write-spec
 ```
 
-**Upload meeting transcripts:** If your meetings are auto-transcribed (e.g., Teams, Zoom), paste the transcript as a note.
+**What happens:**
+1. CLAUDE.md kicks in: reads your context files, searches notes, loads your voice guide
+2. The plugin's feature-spec methodology drives the spec writing process
+3. Claude asks you discovery questions (2-3 at a time)
+4. A draft is generated matching your voice and style
+5. The doc auto-saves to `output/specs/`
+6. Claude offers to run agents (reviewer, edge-case-finder, metrics-designer, editor)
+
+Try running an agent on the output:
+```
+Run the reviewer agent on the spec we just wrote
+```
 
 
-## Week 2: Find Your Workflow
+## Step 4: Build Your Knowledge Base
 
-Everyone works differently. Experiment to find what works for you. If you find something you'd like to change structurally in the commands or agents, ask Claude to change it or update the files yourself. The real magic of the PM Studio happens when you make it truly yours!
+Start capturing notes from your daily work:
 
-### Example Patterns
+```
+/note Had a meeting with design today. They're concerned about the navigation redesign...
+/note Read an interesting article about how Notion handles real-time collaboration...
+/note Random thought: what if we approached pricing differently for enterprise?
+```
 
-**For Specs:**
-1. `/spec [feature]` and answer the discovery questions
-2. Run `edge-case-finder` to surface scenarios you missed
-3. Run `completeness-checker` before sharing
-4. Run `editor` for final polish
+Notes are fuel for future documents. The more context Claude has, the better your output gets.
 
-**For Strategy Docs:**
-1. `/strategy [topic]` and let Claude do competitor research
-2. Run `question-generator` to surface open questions
-3. Run `connection-finder` to link ideas from your notes
+If you have notes in another tool (Notion, OneNote, etc.), bring the important ones to `/notes/`.
 
-**For Shipping Decisions:**
-1. `/shipping [feature]` with your metrics ready
-2. Be honest about concerns - the doc should show both sides
-3. Run `metrics-designer` if you need guardrails
+WorkIQ will automatically offer to pull meeting transcripts as source material when you're capturing meeting takeaways.
 
 
-## What's Next?
+## Step 5: Explore the Full Command Set
 
-After two weeks, you should have:
-- [ ] Context files populated
-- [ ] Examples added
-- [ ] 10+ notes captured
-- [ ] A few docs written
-- [ ] A sense of which workflow suits you
+Try the other commands:
 
-From here, the system keeps getting better as you use it. Your knowledge base grows, you keep refining commands and agents, and Claude gets better at understanding your product and style.
+```
+/strategy competitive-positioning
+/shipping dark-mode
+/product-management:roadmap-update
+/product-management:stakeholder-update
+/product-management:metrics-review
+/product-management:competitive-brief
+/product-management:synthesize-research
+```
+
+Each command benefits from the same enhancement layer: context, voice, notes search, auto-save, and agent offering.
 
 
-## Tips for Success
+## Ongoing
 
-**Keep feeding your knowledge base** - after meetings, when reading, random shower thoughts. Notes are fuel for future docs.
+- **Feed notes constantly** — after meetings, when reading, random thoughts. Notes compound over time.
+- **Keep context files updated** — especially when strategy or priorities change.
+- **Upload more examples** — as your writing evolves, update `context/examples/`.
+- **Run multiple agents** — don't stop at one pass. Reviewer, then editor is a good default.
+- **Customize** — add agents, adjust commands, update examples. Ask Claude to help.
 
-**Keep context files updated** - especially when strategy or priorities change.
 
-**Run multiple agents** - don't stop at one pass. Completeness checker, then critical reader, then editor.
+## Opting Out of WorkIQ
 
-**Ask Claude to help with setup** - "Research competitors in [space] and update product-context.md"
+WorkIQ is queried by default for every command. If you don't want WorkIQ data for a specific command, just tell Claude to skip it (e.g., "write this spec without pulling from WorkIQ"). Other optional connectors (`~~product analytics`, `~~user feedback`, `~~project tracker`) are only used when available.
 
-**Push to GitHub** for version control - makes it easy to sync across machines and track changes over time.
 
-### Recommended Setup
+## Recommended Setup
 
-For best results, I personally use:
-- **Claude Opus 4.5** with extended thinking enabled
+For best results:
+- **Claude Opus** with extended thinking enabled
 - **VS Code** with the Claude Code extension
-- **Superwhisper** for brainstorming - typing random thoughts is hard, talking is easier
-
-
-## Updates
-
-- Star the [GitHub repo](https://github.com/zoekdestep/pm-studio) for updates
-- Check for new commands and agents periodically
-- Share improvements back to the project - PRs are very welcome!
+- **Superwhisper** for voice-based brainstorming (typing random thoughts is hard, talking is easier)
 
 
 ## Questions?
 
 If something isn't working or you have ideas for improvement, [open an issue on GitHub](https://github.com/zoekdestep/pm-studio/issues).
-
-Happy PMing!

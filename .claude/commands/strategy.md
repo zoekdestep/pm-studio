@@ -8,74 +8,27 @@ arguments:
 
 You are helping write a strategy document on: **$ARGUMENTS.topic**
 
-## Phase 1: Internal Research
+Follow all instructions in CLAUDE.md (context loading, research, askback, voice, quality checklist, auto-save, agent offering).
 
-First, search for relevant context within the workspace:
-1. Check `/notes` for any research, ideas, or background on this topic
-2. Check `/context/product-context.md` for strategic alignment
-3. Check `/context/examples/` for any strategy doc examples (if available)
+## WorkIQ Research
 
-Report what you found that's relevant.
+Always query WorkIQ for:
+- Related emails, meeting notes, and strategy discussions
+- Recent meeting transcripts on the topic
+- Existing strategy docs, research, and decision records in SharePoint/OneDrive
+- Team discussions and decisions on the topic
 
-## Phase 2: External Research & Competitor Analysis
+## Additional Connectors (if available)
 
-Before interviewing the user, conduct external research:
-1. **Competitor landscape** - How are competitors (Google, Notion, Adobe, etc.) approaching this space? What strategies are they pursuing?
-2. **Industry research** - What academic research, industry reports, or expert perspectives exist on this topic?
-3. **Market trends** - What relevant trends should inform our strategic thinking?
+If ~~product analytics is connected:
+- Pull relevant usage metrics, trends, behavioral data
 
-Use web search to gather current information. Summarize key findings:
-- Competitor strategies and positioning
-- Research-backed insights that should inform our approach
-- Emerging patterns or opportunities
+## Write
 
-This research should be incorporated into the strategy doc with proper citations.
+Check `context/examples/` for strategy doc examples to match structure and voice. Key sections: compelling title, introduction, purpose, research/framework sections with evidence, principles, application, next steps, open questions, sources.
 
-## Phase 3: Discovery Interview
+**Auto-save** to `/output/strategies/$ARGUMENTS.topic.md`.
 
-Gather information through an askback interview. Ask 2-3 questions at a time:
+## Agents
 
-**Framing**
-- What's the core question or opportunity you're exploring?
-- What triggered this? Why is this important now?
-- Who is the audience for this doc? What decision does it inform?
-
-**Evidence & Research**
-- What research or evidence do you have so far?
-- Are there frameworks or external research we should reference?
-- What have you tried or considered already?
-
-**Scope**
-- What's the scope boundary - what's explicitly NOT in this doc?
-- Is this doc meant to convince, explore, or document a decision already made?
-- What would a successful outcome look like?
-
-Skip questions you can already answer from context.
-
-## Phase 4: Write the Strategy Doc
-
-After gathering enough context, write the strategy doc using the template at `/context/templates/strategy-template.md`.
-
-Key sections to include:
-- Compelling title that frames the insight
-- Introduction (context, opportunity)
-- Purpose of this document
-- Research/framework sections with evidence
-- Principles or implications derived from research
-- Application to the specific problem
-- Follow-ups and next steps
-- Open questions and risks
-- Sources
-
-**IMPORTANT: Auto-save the strategy doc** to `/output/strategies/` with filename `$ARGUMENTS.topic.md`. Create the directory if it doesn't exist. Do this automatically without asking.
-
-## Phase 5: Analysis
-
-After writing, ask if the user wants to run agents:
-- **Completeness Checker** - identify gaps in reasoning
-- **Connection Finder** - link to other notes and ideas
-- **Editor** - polish for readability and tone
-
-## Voice & Style
-
-Read `/context/tone-and-voice.md` and match that tone throughout the document.
+After writing, suggest: **reviewer**, **question-generator**, **editor**.

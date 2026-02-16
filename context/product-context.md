@@ -138,12 +138,36 @@ This file helps PM Studio understand your product domain. It provides context fo
 
 ### Technical Constraints
 
-- [Constraint 1]
-- [Constraint 2]
+This section replaces the separate `technical-context.md` file. Include architecture, platform, and engineering constraints that affect product decisions.
+
+**Architecture & Infrastructure:**
+- [Key architectural constraint or dependency]
+- [Performance budget or latency target]
+- [Scale considerations]
 
 > *Example:*
 > - *Max 50 simultaneous cursors (perf degrades beyond this)*
-> - *Mobile has 2-second sync delay due to battery optimization*
+> - *Latency budget: <500ms for sync operations*
+> - *CRDT-based sync, so offline editing is possible but conflict resolution has edge cases*
+
+**Key Services & Dependencies:**
+
+| Service/System | What It Does | Constraints |
+|----------------|--------------|-------------|
+| [Service 1] | [Description] | [Limitations] |
+
+> *Example:*
+> | Service/System | What It Does | Constraints |
+> |----------------|--------------|-------------|
+> | Sync service | Real-time document sync | Max 100 concurrent connections per doc |
+> | Search index | Full-text search across docs | 15-minute indexing delay |
+
+**Security & Compliance:**
+- [Relevant security or compliance constraints]
+
+> *Example:*
+> - *All data encrypted at rest and in transit*
+> - *GDPR: right to deletion must propagate within 30 days*
 
 ### Business Constraints
 
@@ -156,15 +180,15 @@ This file helps PM Studio understand your product domain. It provides context fo
 
 ### Platform Differences
 
-| Platform | Considerations |
-|----------|----------------|
-| [Platform 1] | [Specific constraints or opportunities] |
+| Platform | Tech Stack | Constraints |
+|----------|-----------|-------------|
+| [Platform 1] | [Technologies] | [Specific constraints or opportunities] |
 
 > *Example:*
-> | Platform | Considerations |
-> |----------|----------------|
-> | Web | Full feature set, primary platform |
-> | Mobile | Limited to viewing + comments (no real-time editing) |
+> | Platform | Tech Stack | Constraints |
+> |----------|-----------|-------------|
+> | Web | React, TypeScript | Full feature set, primary platform |
+> | Mobile | React Native | Limited to viewing + comments (no real-time editing), 2s sync delay |
 
 
 ## Rollout Process

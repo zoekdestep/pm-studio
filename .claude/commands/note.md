@@ -10,62 +10,23 @@ You are helping capture a note: **$ARGUMENTS.content**
 
 ## Process
 
-### 1. Understand the Note
+1. **Understand** — If the content is brief or unclear, ask clarifying questions (context, source, follow-ups).
 
-If the content is brief or unclear, ask clarifying questions:
-- What's the context for this thought?
-- Is this from a meeting, reading, or your own thinking?
-- Are there any follow-up thoughts or open questions?
+2. **Categorize** — Determine the best folder:
+   - `/notes/ideas/` — Raw ideas, hunches, things to explore
+   - `/notes/research/` — User research, competitor analysis, data findings
+   - `/notes/reading/` — Articles, books, learnings from external sources
 
-### 2. Categorize
+3. **Enrich from WorkIQ** — Always offer to pull related context:
+   - If the user is capturing meeting takeaways: pull the meeting transcript/summary from WorkIQ as source material
+   - If the topic relates to ongoing discussions: search for relevant emails or documents
+   - If the user is capturing research: search for related internal docs
 
-Determine the best folder:
-- `/notes/ideas/` - Raw ideas, hunches, things to explore
-- `/notes/research/` - User research, competitor analysis, data findings
-- `/notes/meetings/` - Meeting notes, decisions, action items
-- `/notes/reading/` - Articles, books, learnings from external sources
+4. **Enrich from other connectors** (if available):
+   - If ~~user feedback is connected and user is capturing research: offer to pull related support tickets or feedback
 
-Suggest the category and confirm with the user.
+5. **Format** — Structure with title, date, source, content (kept raw), tags, and open questions. Never clean up notes for tone or clarity.
 
-### 3. Format the Note
+6. **Save** — Generate filename `YYYY-MM-DD-descriptive-title.md` and save to the appropriate `/notes/` subfolder.
 
-Structure the note with:
-- **Title**: Descriptive, searchable title
-- **Date**: Today's date
-- **Source**: Where this came from (meeting, article, own thinking)
-- **Content**: The main content, but never clean it up for clarity
-- **Tags**: Relevant topics for future searching
-- **Open questions**: Any follow-ups or things to explore
-
-### 4. Save
-
-Generate a filename: `YYYY-MM-DD-descriptive-title.md`
-
-Save to the appropriate folder in `/notes/`.
-
-### 5. Connections
-
-After saving, check if this note connects to:
-- Other notes in the knowledge base
-- Ongoing work in `/output/`
-- Context in `/context/`
-
-Surface any interesting connections.
-
-## Example Output
-
-```markdown
-# [Title]
-
-**Date:** [Today's date]
-**Source:** [Meeting / Article / Own thinking / etc.]
-**Tags:** #topic1 #topic2
-
-## Content
-
-[The main content of the note]
-
-## Open Questions
-
-- [Any follow-up questions or things to explore]
-```
+7. **Connect** — Surface any connections to other notes, ongoing work in `/output/`, or context files.
