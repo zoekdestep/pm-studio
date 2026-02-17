@@ -29,7 +29,7 @@ When you work inside the PM Studio workspace, all three layers are active. CLAUD
 
 **Optional:**
 - Additional MCP connectors (Slack, Linear, Figma, etc.) can be added to `.mcp.json`
-- [Superwhisper](https://superwhisper.com/) for voice-based brainstorming
+- [Handy.computer](https://handy.computer/) for voice-based brainstorming
 
 > **WorkIQ is always on.** Every command (plugin and PM Studio) queries WorkIQ for relevant emails, meetings, and documents by default. Tell Claude to skip it if you don't want it for a specific command.
 

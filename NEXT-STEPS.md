@@ -115,7 +115,7 @@ WorkIQ is queried by default for every command. If you don't want WorkIQ data fo
 For best results:
 - **Claude Opus** with extended thinking enabled
 - **VS Code** with the Claude Code extension
-- **Superwhisper** for voice-based brainstorming (typing random thoughts is hard, talking is easier)
+- **[Handy.computer](https://handy.computer/)** for voice-based brainstorming (typing random thoughts is hard, talking is easier)
 
 
 ## Questions?
