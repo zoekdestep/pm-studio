@@ -17,6 +17,7 @@ Before ANY writing command (plugin or local):
 3. **Search** `/notes/` — for relevant background, ideas, research, or previous work on the topic
 4. **Read** `context/tone-and-voice.md` — writing style guide (applied to all output except raw notes)
 5. **Check** `context/examples/` — for reference docs that demonstrate both structure and voice (these are the source of truth for how documents should look and sound)
+6. **Check** `context/references.md` — for high-priority documents mapped to the current topic. Search WorkIQ for each matching document by title. These are the user's curated "always read these" sources that WorkIQ can't infer on its own.
 
 Skip questions you can already answer from context or prior conversation.
 
